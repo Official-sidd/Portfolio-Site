@@ -1,0 +1,147 @@
+.hero{
+    background-image: url(../Images/bg2.jpg);
+    /* background-color: rgb(234, 154, 4); */
+    height: 515px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: white;
+  }
+
+.menu .ull .lii a{
+    text-decoration: none;
+    color: white;
+    padding-right: 32px;
+  }
+  
+  .ull{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+    padding-top: 1rem;
+    padding-right: 2rem;
+  }
+  .lii{
+    list-style-type: none;
+    color: white;
+    z-index: 10000;
+  }
+  .menu{
+    align-self: flex-end;
+  }
+
+  /* .fullName{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    font-size: 8vh;
+    justify-content: center;
+    position: absolute;
+  } */
+  /* .fullName h1 {
+    display: inline-block;
+    position: relative;
+    top: 220px;
+    left: 100px;
+  }
+  .fullName h6 {
+    display: block;
+    position: relative;
+    top: 300px;
+    right: 725px;
+  } */
+  @media(max-width: 1080px){
+    /* .fullName{
+        font-size: 6vh;
+    }
+    .fullName h6{
+        font-size: 4vh;
+        position: absolute;
+        top: 333px;
+        left: 200px
+    }
+     */
+  }  
+  @media(max-width:1080px){
+    .image h1{
+      font-size: 100px;
+      left: 70px;
+      top: 220px;
+    }
+    .semi{
+      margin-right: 0;
+    }
+
+  }
+  @media(max-width:800px){
+    .image h1{
+      font-size: 80px;
+      left: 50px;
+      top: 220px;
+      animation: none;
+    }
+  }
+  @media(max-width:600px){
+    .image h1{
+      font-size: 65px;
+      left: 50px;
+      top: 220px;
+      animation: none;
+    }
+  }
+  @media(max-width:450px){
+    .image h1{
+      font-size: 50px;
+      left: 30px;
+      top: 220px;
+      animation: none;
+    }
+   
+  }
+  /* html {
+    font-size: calc(32px + 0.390625vw);
+  } */
+.image{
+  line-height: 60px;
+}
+.semi{
+  font-size: 100px;
+  position: relative;
+  display: inline-block;
+  top: 250px;
+  left: 100px;
+  color: rgb(228, 228, 228);
+  animation-name: downtop;
+  animation-duration: 3s;
+  margin-right: 20px;
+  }
+  
+  .colon{
+          position: relative;
+           display: inline-block;
+           font-size: 100px;
+           color: rgb(228, 228, 228);
+           top: 250px;
+           left: 100px;
+           animation-name: topdown;
+           animation-duration: 3s;
+       }
+  
+       @keyframes downtop {
+          0% {color: rgb(0, 0, 0); left:-1000px; }   
+          25% {color: #3d3d3d; } 
+          50% {color: #919393; }  
+          75% {color: #c8caca; }     
+          100% {color:rgb(228, 228, 228); left:100px; }  
+          }
+          
+          @keyframes topdown{   
+           0% {color: rgb(0, 0, 0); top:-1000px; }  
+           25% {color: #3d3d3d; }   
+           50% {color: #919393; }   
+           75% {color: #c8caca; }       
+           100% {color:rgb(228, 228, 228); top:250px;}       
+          }
+  

@@ -1,0 +1,45 @@
+
+.AboutMe{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(216, 216, 216,0.3);
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    
+  }
+  .background{
+    /* background-color: #2b4c73; */
+    padding: 40px 0;
+    border-bottom: 2px solid #142d4c;
+  }
+  .AboutContent{
+    display: grid;
+    place-items: center;
+    padding: 30px;
+  }
+
+  @media(max-width: 800px){
+    .AboutMe{
+      grid-template-columns: repeat(1,1fr);
+      width: 60%;
+      padding: 0;
+    }
+  }
+  
+  @media(max-width: 700px){
+    .AboutMe{
+      grid-template-columns: repeat(1,1fr);
+      width: 60%;
+      padding: 0;
+    }
+  }
+  @media(max-width: 570px){
+    .AboutMe{
+      grid-template-columns: repeat(1,1fr);
+      width: 90%;
+    }
+  }
